@@ -1,0 +1,18 @@
+blockquote {border-left: 5px solid #ffd54f}
+
+.link {color: #ff7043 !important}
+
+.para-heading {color: #afb42b !important}
+
+.subtitle {
+  color: #00695c !important;
+}
+
+.schedule {
+  border: 1px solid #eee;
+  background-color: #ff7043;
+  color: white;
+  line-height: 50px;
+  margin-top: -20px;
+  text-align: center;
+}

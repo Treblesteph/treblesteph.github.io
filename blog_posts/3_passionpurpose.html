@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="../assets/favicon.png" rel="icon" type="image/png"/>
+    <link href="../styles/blogstyle.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+  <body>
+    <div class="pagesec"></div>
+    <script>
+      function addmainsec(i){
+        $('.mainsec').load(i.concat(".html"));
+      }
+
+      function addcontent(i, callback){
+        $('.pagesec').load('pagesec.html', function() {
+          callback(i);
+        });
+      };
+
+      $(document).ready(
+        addcontent('3', addmainsec)
+      );
+    </script>
+  </body>
+</html>
