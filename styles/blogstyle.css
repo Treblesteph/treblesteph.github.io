@@ -34,3 +34,7 @@ blockquote {border-left: 5px solid #ffd54f}
 #collapse {
   font-size: 1.1rem;
 }
+
+#caption h5 {
+  color: #ef5350;
+}
