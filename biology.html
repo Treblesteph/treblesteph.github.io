@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html"; charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <title>Steph Smith-Unna</title>
+    <link href="assets/favicon.png" rel="icon" type="image/png"/>
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.7.0/css/tachyons.min.css"/>
+  </head>
+  <body>
+    <div class="mw9 center ph3-ns">
+      <div class="cf ph2-ns">
+        <div class="fl w-100 pa4">
+          <a class="mid-gray no-underline link dim b f2" href="index.html">Steph Smith-Unna</a>
+        </div>
+        <div class="fl w-100">
+          <div class="fl w-100 w-third-ns">
+            <div class="fl w-100 w-50-l mv2 mv1-l ph4">
+              <a class="mid-gray no-underline link dim b f3" href="maths.html">Maths</a>
+            </div>
+            <div class="fl w-100 w-50-l mv2 mv1-l ph4">
+              <a class="mid-gray no-underline link dim b f3" href="software.html">Software</a>
+            </div>
+          </div>
+          <div class="fl w-100 w-third-ns">
+            <div class="fl w-100 w-50-l mv2 mv1-l ph4">
+              <a class="mid-gray no-underline link dim b f3" href="entomology.html">Insects</a>
+            </div>
+            <div class="fl w-100 w-50-l mv2 mv1-l ph4">
+              <a class="orange no-underline link dim b f3" href="biology.html">Biology</a>
+            </div>
+          </div>
+          <div class="fl w-100 w-third-ns">
+            <div class="fl w-100 w-50-l mv2 mv1-l ph4">
+              <a class="mid-gray no-underline link dim b f3" href="kenya.html">Kenya</a>
+            </div>
+            <div class="fl w-100 w-50-l mv2 mv1-l ph4">
+              <a class="mid-gray no-underline link dim b f3" href="mama.html">Mama</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <img class="w-100" src="assets/plot.png"/>
+    <div class="w-95 mh4 pa4">
+      <div class="lh-copy">
+        <h1>Page contents</h2>
+        <h3 class="ph2-ns"><i class="em em-chart_with_upwards_trend"></i><a class="dark-gray no-underline link dim" href="#sec1"><em>In silico</em>  network evolution</a></h3>
+        <h3 class="ph2-ns"><i class="em em-chart_with_upwards_trend"></i><a class="dark-gray no-underline link dim" href="#sec2">Bee, virus, and plant interactions model</a></h3>
+        <h3 class="ph2-ns"><i class="em em-chart_with_upwards_trend"></i><a class="dark-gray no-underline link dim" href="#sec3">Mosquito population dynamics</a></h3>
+        <h3 class="ph2-ns"><i class="em em-chart_with_upwards_trend"></i><a class="dark-gray no-underline link dim" href="#sec4">Sigma factor modelling</a></h3>
+        <h3 class="ph2-ns"><i class="em em-chart_with_upwards_trend"></i><a class="dark-gray no-underline link dim" href="#sec5">Aphid feeding preferences in a dual phloem system</a></h3>
+      </div>
+    </div>
+
+    <div class="w-95 mh4 pa4">
+      <h1 class="fl ma4-ns w-100" id="sec1">Network evolution</h1>
+      <p class="fl f4 lh-copy pa4-ns ma0 w-80 w-60-ns">
+        All living organisms are encoded at the genetic level by a set of genes: their DNA. Behaviours and characteristics are determined by which genes are switched on or off at any given time. Genes can interact to switch each other on or off (or turn up/down), and these interactions can be modelled by mathematical networks (or <a class="link dim orange no-underline" href="https://en.wikipedia.org/wiki/Graph_(discrete_mathematics)" target="_blank">graphs</a>). Simple graphs with known behaviours (such as an oscillator or a switch) are called network motifs, and can be useful in synthetic biology as they can enable us to create desired behaviours. For example the production of a useful chemical or tissue in a fast growing bacterial colony. In this project, I am attempting to develop small network motifs that can perform desired behaviours, but which are resillient to minor random changes (noise) in the environment. I use emulated biological evolution to evolve a population of small, randomly generated networks <em>in silico</em> under conditions that will lead to desired behaviours. This work is not yet published, but I am doing it in the open, so please feel free to check it out <a class="link dim orange no-underline" href="https://github.com/Treblesteph/network_evo" target="_blank">on Github</a>.
+      </p>
+      <img src="assets/network1.jpg" class="fl pa4-ns w-80 w-30-ns" alt="general network"/>
+      <h1 class="fl ma4-ns w-100" id="sec2">Bee, virus, and plant interactions model</h1>
+      <p class="fl f4 lh-copy pa4-ns ma0 ßw-80 w-40-ns">
+        Cucumber Mosaic Virus (CMV) is a ubiquitous plant virus that infects tomatoes. Tomatoes are pollinated by bumblebees, and whilst they are able to self pollinate, to an extent, without bumblebees, they increase the plant's fertility due to the vibrations of their buzzing. It has been suggested that CMV helps to attract pollinators to susceptible plants, by making them smell more attractive to bumblebees. In order to check whether this change in smell (volatile profile) of infected plants, confers an evolutionary advantage to the virus, I constructed a mathematical model of the system.
+      </p>
+      <img src="assets/bee1.jpg" class="fl pa4-ns w-80 w-50-ns" alt="cuckoo bee"/>
+      <p class="fl f4 lh-copy pa4-ns w-80 w-100-ns">
+         The model starts with a bee flight model, taking into account the difference in attractiveness between different plant populations (resistant, susceptible uninfected, and infected), and the difference in fertility between buzz, and non-buzz pollination. The results of this partition feed into a genetic (Mendelean) model that looks at how the population of each of these partitions will change over time. Then the simulation is repeated over evolutionary time to look at the steady state conditions of each population partition. If you are interested in this work, check out the model <a class="link dim orange no-underline" href="https://github.com/Treblesteph/tomatoCMVmodel" target="_blank">on Github</a>, or <a class="link dim orange no-underline" href="https://www.dropbox.com/s/furmuth5426x2l4/report_fin.pdf?dl=0">download the report</a>.
+      </p>
+      <h1 class="fl ma4-ns w-100" id="sec3">Mosquito population dynamics</h1>
+      <p class="fl f4 lh-copy pa4-ns ma0 w-80 w-70-ns">
+        <em>Aedes albopictus</em>, the asian tiger (or dengue) mosquito, is arguably the most invasive species on earth. Found on all continents except Antarctica, and a notorious vector of many human and livestock viruses, it has a huge economic importance. This study attempts to determine how the mosquito will spread geographically as a result of the changing climate. The model takes survival and growth rate parameters from a comprehensive meta-analysis of lab-based studies to determine functional forms for growth and survial under different environmental conditions. The model is then fitted to field data to generate accurate predictions in a real world scenario. You can read my report <a class="link dim orange no-underline" href="https://www.dropbox.com/s/lbhxwta0l4qj9fr/Mosquito_model_draft2%20copy.pdf?dl=0" target="_blank">here</a>, and the work has now been published (although it went in a direction I wasn't happy with) so you can read that <a class="link dim orange no-underline" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4752251/" target="_blank">here</a>.
+      </p>
+      <img src="assets/mosquito1.jpg" class="fl pa4-ns w-80 w-20-ns" alt="mosquito"/>
+      <h1 class="fl ma4-ns w-100" id="sec4">Sigma factor modelling</h1>
+      <p class="fl f4 lh-copy pa4-ns ma0 w-80 w-70-ns">
+        Sigma factors are proteins in bacteria which are necessary for performing transcription, a vital part of cell-division and therefore population growth. I worked on a model for a study about interesting patterns in the way that transcription factors are expressed (switched on) in the soil dwelling bacteria <em>Bacillus subtilis</em>. This work is not yet published and whilst this would not stop me from sharing it, others who run the project would rather keep it under wraps for now.
+      </p>
+      <img src="assets/sigma1.png" class="fl pa4-ns w-80 w-20-ns" alt="sigma factor"/>
+      <h1 class="fl ma4-ns w-100" id="sec5">Aphid feeding preferences in a dual phloem system</h1>
+      <p class="fl f4 lh-copy pa4-ns ma0 w-80 w-70-ns">
+        Plants in the family Cucurbitacaeae (cucumbers, melons, pumpkins and squashes) possess two functionally and structurally divergent phloems. This project explored the phloem feeding preferences and behaviours the aphid, <em>Aphis gossypii</em>, within this dual phloem system. I used a range of different methods to determine the feeding habits: EPG (<a class="orange link dim no-underline" href="http://en.wikipedia.org/wiki/Electrical_penetration_graph" target="_blank">electrical penetration graph</a>) for identifying the specific cells that were being probed; staining and micro-sectioning to observe the aphid mouthparts' (stylets) intercellular path into the plant tissue; and aphid culturing and placement observations (adaxial/abaxial leaf surface, stem etc.). You can read the report <a class="orange link dim no-underline" href="https://www.dropbox.com/s/lh25f674mugae77/Aphid_cucurbit_project_final.pdf?dl=0" target="_blank"> here</a>.
+      </p>
+      <img src="assets/aphid1.png" class="fl pa4-ns w-80 w-20-ns" alt="aphids"/>
+    </div>
+  </body>
+</html>

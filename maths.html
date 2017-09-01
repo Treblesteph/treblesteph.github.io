@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html"; charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <title>Steph Smith-Unna</title>
+    <link href="assets/favicon.png" rel="icon" type="image/png"/>
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.7.0/css/tachyons.min.css"/>
+  </head>
+  <body>
+    <div class="mw9 center ph3-ns">
+      <div class="cf ph2-ns">
+        <div class="fl w-100 pa4">
+          <a class="mid-gray no-underline link dim b f2" href="index.html">Steph Smith-Unna</a>
+        </div>
+        <div class="fl w-100">
+          <div class="fl w-100 w-third-ns">
+            <div class="fl w-100 w-50-l mv2 mv1-l ph4">
+              <a class="orange no-underline link dim b f3" href="maths.html">Maths</a>
+            </div>
+            <div class="fl w-100 w-50-l mv2 mv1-l ph4">
+              <a class="mid-gray no-underline link dim b f3" href="software.html">Software</a>
+            </div>
+          </div>
+          <div class="fl w-100 w-third-ns">
+            <div class="fl w-100 w-50-l mv2 mv1-l ph4">
+              <a class="mid-gray no-underline link dim b f3" href="entomology.html">Insects</a>
+            </div>
+            <div class="fl w-100 w-50-l mv2 mv1-l ph4">
+              <a class="mid-gray no-underline link dim b f3" href="biology.html">Biology</a>
+            </div>
+          </div>
+          <div class="fl w-100 w-third-ns">
+            <div class="fl w-100 w-50-l mv2 mv1-l ph4">
+              <a class="mid-gray no-underline link dim b f3" href="kenya.html">Kenya</a>
+            </div>
+            <div class="fl w-100 w-50-l mv2 mv1-l ph4">
+              <a class="mid-gray no-underline link dim b f3" href="mama.html">Mama</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w-95 ma4 pa4">
+      <h1 class="fl ma4-ns w-100">Hercules versus the Hydra</h1>
+      <h2 class="fl ma4-ns w-100">Exploring fast-growing functions with a simple game</h2>
+      <p class="fl f4 lh-copy pa4-ns ma0 w-80 w-60-ns">
+        <em>Hercules Versus the Hydra</em> is a Greek legend about Hercules fighting a monster called the Hydra. According to Greek mythology, the Hydra - often known as the Lernean Hydra - was a monster with many heads who lived in a marsh near the region of Lerna. Every time Hercules chops off one of the Hydra's heads, multiple new heads grow back. Whether or not Hercules will win the battle and destroy all the heads of the Hydra will depend upon how many heads grow back each time one is removed.
+      </p>
+      <img src="assets/Hercules_Hydra.jpg" class="fl pa4-ns w-30 w-30-ns" alt="Hercules and the Hydra"/>
+      <p class="fl f4 lh-copy pa4-ns w-80 w-100-ns">
+        We start with a string of the letters 'a' and 'b'. The aim is to destroy the string, with three rules: each turn, the first letter is lopped off, an 'a' becomes 'ab' and 'b' stays the same.
+      </p>
+      <br/><br/>
+      <code class="fl lh-copy f4 pa3 ma4-ns w-80 bg-light-gray">
+        a &#8594; ab
+        <br/>
+        b &#8594; b
+      </code>
+      <p class="fl f4 lh-copy pa4-ns w-80 w-100-ns">
+        This work explored the range of possible outcomes under different rules, and starting strings. Examples of games under the simple case (two letters and three aforementioned rules) are shown below. The first is a short game, starting with the string 'abb' the second is still a fairly short starting string, 'abaaba', but with many more steps.
+      </p>
+      <code class="fl lh-copy f4 pa3 ma4-ns w-80 bg-light-gray">
+        <em class="b f3">abb</em>
+        <br/>
+        bb
+        <br/>
+        b
+        <br/>
+        <em class="b">3 steps</em>
+        <br/>
+        <br/>
+        <br/>
+        <em class="b f3">abaaba</em>
+        <br/>
+        bababbab
+        <br/>
+        abbabbbabb
+        <br/>
+        bbabbbbabbb
+        <br/>
+        babbbbbabbbb
+        <br/>
+        abbbbbbabbbbb
+        <br/>
+        bbbbbbabbbbbb
+        <br/>
+        bbbbbabbbbbbb
+        <br/>
+        bbbbabbbbbbbb
+        <br/>
+        bbbabbbbbbbbb
+        <br/>
+        bbabbbbbbbbbb
+        <br/>
+        babbbbbbbbbbb
+        <br/>
+        abbbbbbbbbbbb
+        <br/>
+        bbbbbbbbbbbb
+        <br/>
+        bbbbbbbbbbb
+        <br/>
+        bbbbbbbbbb
+        <br/>
+        bbbbbbbbb
+        <br/>
+        bbbbbbbb
+        <br/>
+        bbbbbbb
+        <br/>
+        bbbbbb
+        <br/>
+        bbbbb
+        <br/>
+        bbbb
+        <br/>
+        bbb
+        <br/>
+        bb
+        <br/>
+        b
+        <br/>
+        <em class="b">25 steps</em>
+      </code>
+      <p class="fl f4 lh-copy pa4-ns w-80 w-100-ns">
+        The initial observations of this simple game are listed below. The game gets more interesting when we introduce more letters and rules. Check out the <a class="orange no-underline link dim" href="https://drive.google.com/file/d/0B4XNyViUMtgcMTFGNDA5QTJCRkY4MzlDNDowLjE/view?usp=sharing" target="_blank">report</a>.
+        <ul class="fl f4 lh-copy ma4-ns w-80">
+          <li>
+            <p class="b">Hercules will always win:</p> the 'a' closest to the left of the string will always eventually become the first entry, and will be lopped off, this may take very many steps though.
+          </li>
+          <li>
+            <p class="b">The minimum number of steps for a string of length 'n' will be n:</p> this will happen for a string consisting only of 'b's since they do not increase the length at all.
+          </li>
+          <li>
+            <p class="b">The maximum number of steps for a string of length 'n' will be 2&#8319; &#8722; 1:</p> this will happen for a string of 'a's, see <a class="orange no-underline link dim" href="https://drive.google.com/file/d/0B4XNyViUMtgcMTFGNDA5QTJCRkY4MzlDNDowLjE/view?usp=sharing" target="_blank">report</a> for full explanation and proof.
+          </li>
+        </ul>
+      </p>
+      <p class="fl f4 lh-copy pa4-ns w-80 w-100-ns">
+        You can read the full report <a class="orange no-underline link dim" href="https://drive.google.com/file/d/0B4XNyViUMtgcMTFGNDA5QTJCRkY4MzlDNDowLjE/view?usp=sharing" target="_blank">here</a>.
+      </p>
+    </div>
+  </body>
+</html>
